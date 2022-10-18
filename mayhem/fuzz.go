@@ -24,14 +24,8 @@ func mayhemit(bytes []byte) int {
             content := string(bytes)
             gredcon.AppendString(bytes, content)
             return 0
-        case 4:
-            gredcon.AppendOK(bytes)
-            return 0
         default:
-            var test gredcon.Handler
-            var test2 gredcon.ServeMux
-            content := string(bytes)
-            test2.Handle(content, test)
+            gredcon.AppendOK(bytes)
             return 0
     }
 }
