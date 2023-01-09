@@ -1,4 +1,4 @@
-package fuzz
+package fuzzgredcon
 
 import "strconv"
 import "github.com/nisainan/gredcon/gredcon"
